@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* { 
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body { font-family: "DM Sans", sans-serif;  }
+a, button { transition: all .4s ease-in-out; }
+.col { flex: 1 0 0%; }
+
+/* Side Menu Styles */
+@media (max-width: 1024px) {
+  .main__side__nav { @apply -translate-x-full invisible opacity-0 w-0 fixed top-0 left-0 z-50 bg-white transition-all duration-500 }
+  .main__side__nav.open { @apply translate-x-0 visible opacity-100 w-[300px] }
+}
