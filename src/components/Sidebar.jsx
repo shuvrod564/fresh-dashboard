@@ -1,7 +1,10 @@
 import React from 'react'
-import { BsTruck } from 'react-icons/bs'
-import { FiArrowLeft } from 'react-icons/fi'
-import { MdOutlineExplore } from 'react-icons/md'
+import { BsChatLeftDots, BsTruck } from 'react-icons/bs'
+import { FiArrowLeft, FiPieChart } from 'react-icons/fi'
+import { GrLineChart } from 'react-icons/gr'
+import { IoSettingsOutline } from 'react-icons/io5'
+import { MdOutlineExplore, MdOutlinePayments } from 'react-icons/md'
+import { PiUsersThreeLight } from 'react-icons/pi'
 import { RxDashboard } from 'react-icons/rx'
 import { TfiCup } from 'react-icons/tfi'
 import { Link, useLocation } from 'react-router-dom'
@@ -25,7 +28,37 @@ const navLinks = [
   {
     title: 'Featured Products',
     slug: '#',
-    icon: <TfiCup className='text-[22px]' />
+    icon: <TfiCup className='text-lg' />
+  },
+  {
+    title: 'Settings',
+    slug: '#',
+    icon: <IoSettingsOutline className='text-[22px]' />
+  },
+  {
+    title: 'Charts',
+    slug: '#',
+    icon: <FiPieChart className='text-[22px]' />
+  },
+  {
+    title: 'Trends',
+    slug: '#',
+    icon: <GrLineChart className='text-[22px]' />
+  },
+  {
+    title: 'Contact',
+    slug: '#',
+    icon: <BsChatLeftDots className='text-[22px]' />
+  },
+  {
+    title: 'Billing',
+    slug: '#',
+    icon: <MdOutlinePayments className='text-[22px]' />
+  },
+  {
+    title: 'Customers',
+    slug: '#',
+    icon: <PiUsersThreeLight className='text-[22px]' />
   },
 ]
 
